@@ -13,5 +13,5 @@ ADD sources_ubuntu_14_04_sh.list /etc/apt/sources.list
 
 # Install basic packages
 RUN apt-get update && \
-    apt-get -y install ca-certificates ccze curl dnsutils htop python python-pip tcpdump telnet traceroute unzip vim wget zip && \
+    apt-get install -y ca-certificates ccze curl dnsutils htop python python-pip tcpdump telnet traceroute unzip vim wget zip && \
     apt-get clean && rm -rf /var/lib/apt/lists/*
