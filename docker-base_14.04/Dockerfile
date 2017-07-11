@@ -7,6 +7,7 @@ MAINTAINER Hobbey W "hobbey12@gmail.com"
 #ENV https_proxy proxy:port
 #ENV no_proxy localhost,10.0.0.0/8,192.168.0.0/16
 ENV DEBIAN_FRONTEND noninteractive
+RUN echo 'export PS1="\[\033[0;32m\]\u@\h\[\033[0m\] [C] \W \\$ "' >> ~/.bashrc
 
 # add local apt mirror
 ADD sources_ubuntu_14_04_sh.list /etc/apt/sources.list
