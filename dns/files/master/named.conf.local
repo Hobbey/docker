@@ -1,0 +1,11 @@
+zone "hobbey.com" {
+    type master;
+    file "/etc/bind/zones/db.hobbey.com";     # zone file path
+    allow-transfer { 192.168.2.102; };        # ns2 private IP address - secondary
+};
+
+zone "2.168.192.in-addr.arpa" {
+    type master;
+    file "/etc/bind/zones/db.192.168.2";   # 192.168.2.0/24 subnet
+    allow-transfer { 192.168.2.102; };     # ns2 private IP address - secondary
+};

@@ -1,0 +1,11 @@
+zone "hobbey.com" {
+    type slave;
+    file "slaves/db.hobbey.com";
+    masters { 192.168.2.101; };  # ns1 private IP
+};
+
+zone "2.168.192.in-addr.arpa" {
+    type slave;
+    file "slaves/db.192.168.2";
+    masters { 192.168.2.101; };  # ns1 private IP
+};

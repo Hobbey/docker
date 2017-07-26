@@ -1,0 +1,30 @@
+$TTL    604800
+@       IN      SOA     ns1.hobbey.com. admin.hobbey.com. (
+                     2017072500         ; Serial
+                         604800         ; Refresh
+                          86400         ; Retry
+                        2419200         ; Expire
+                         604800 )       ; Negative Cache TTL
+;
+
+; name servers - NS records
+        IN      NS      ns1.hobbey.com.
+        IN      NS      ns2.hobbey.com.
+
+; name servers - PTR Records
+101   IN    PTR     ns1.hobbey.com.
+102   IN    PTR     ns2.hobbey.com.
+
+; server
+101   IN    PTR     ubuntu1.hobbey.com.
+102   IN    PTR     ubuntu2.hobbey.com.
+103   IN    PTR     ubuntu3.hobbey.com.
+
+; local infra
+101   IN    PTR     mirror-apt.hobbey.com.
+101   IN    PTR     mirror-yum.hobbey.com.
+101   IN    PTR     ntp.hobbey.com.
+
+; service
+101   IN    PTR     docker-registry.hobbey.com.
+101   IN    PTR     puppet.hobbey.com.
