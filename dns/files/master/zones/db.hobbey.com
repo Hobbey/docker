@@ -1,6 +1,6 @@
 $TTL    604800
 @       IN      SOA     ns1.hobbey.com. admin.hobbey.com. (
-         2017072500     ; Serial
+         2017090500     ; Serial
              604800     ; Refresh
               86400     ; Retry
             2419200     ; Expire
@@ -18,7 +18,8 @@ ns2.hobbey.com.         IN      A       192.168.2.102
 ; server
 ubuntu1.hobbey.com.     IN      A       192.168.2.101
 ubuntu2.hobbey.com.     IN      A       192.168.2.102
-ubuntu3.hobbey.com.	IN	A	192.168.2.103
+ubuntu3.hobbey.com.     IN      A       192.168.2.103
+centos1.hobbey.com.     IN      A       192.168.2.111
 
 ; local infra
 mirror-apt.hobbey.com.  IN      A       192.168.2.101   
