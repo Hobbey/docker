@@ -1,0 +1,30 @@
+# bashrc in container
+
+# PS1 :
+RED='\[\033[38;5;1m\]'
+YELLOW='\[\033[38;5;172m\]'
+GREEN='\[\033[38;5;34m\]'
+PINK='\[\033[38;5;168m\]'
+WHITE='\[\033[38;5;15m\]'
+PURPLE='\[\033[38;5;133m\]'
+BLUE='\[\033[0;34m\]'
+NC='\[\033[0m\]'
+
+# PS1 root user in red
+#export PS1="${RED}\u${YELLOW}@${GREEN}\h ${PINK}\t ${WHITE}\$? ${PURPLE}\w${NC}\n${BLUE}\\$ ${NC}"
+# PS1 common user in green
+#export PS1="${GREEN}\u${YELLOW}@${GREEN}\h ${PINK}\t ${WHITE}\$? ${PURPLE}\w${NC}\n${BLUE}\\$ ${NC}"
+# PS1 in container (the "C" will remind me i am in container)
+export PS1="${RED}[C]${GREEN}\u${YELLOW}@${GREEN}\h ${PINK}\t ${WHITE}\$? ${PURPLE}\w${NC}\n${BLUE}\\$ ${NC}"
+
+unset RED YELLOW GREEN PINK WHITE PURPLE BLUE NC
+
+# ls -> l
+alias ls='ls --color=auto'
+alias ll='ls -lsh --full-time --group-directories-first'
+# show hidden file only
+alias l.='ls -ld  --full-time --group-directories-first .*'
+
+# others
+alias grep='grep --color'
+export HISTTIMEFORMAT="%F %T : "
