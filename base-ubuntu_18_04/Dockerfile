@@ -16,7 +16,7 @@ RUN cat /tmp/bashrc >> /root/.bashrc &&\
     apt update && \
     apt install -y ca-certificates ccze htop \
                    curl wget \
-                   dnsutils traceroute tcpdump telnet netcat \
+                   dnsutils traceroute tcpdump telnet netcat net-tools \
                    tar zip unzip \
                    less vim && \
     apt clean && rm -rf /var/lib/apt/lists/*
