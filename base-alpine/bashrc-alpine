@@ -26,5 +26,5 @@ alias ll='ls -lsh --full-time --group-directories-first'
 alias l.='ls -ld  --full-time --group-directories-first .*'
 
 # others
-alias grep='grep --color'
+#alias grep='grep --color'
 export HISTTIMEFORMAT="%F %T : "
