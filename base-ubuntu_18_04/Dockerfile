@@ -2,6 +2,7 @@ FROM ubuntu:18.04
 MAINTAINER Hobbey W "hobbey12@gmail.com"
 
 ADD bashrc /tmp/
+ADD localtime /etc/localtime
 ADD sources_ubuntu_18_04_sh.list /etc/apt/sources.list
 
 # Set Env

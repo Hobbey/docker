@@ -2,6 +2,7 @@ FROM alpine
 MAINTAINER Hobbey W "hobbey12@gmail.com"
 
 ADD bashrc-alpine /tmp/
+ADD localtime /etc/localtime
 
 RUN cat /tmp/bashrc-alpine >> /root/.bashrc &&\
     rm -f /tmp/bashrc-alpine &&\

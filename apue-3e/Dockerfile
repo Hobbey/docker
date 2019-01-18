@@ -11,6 +11,8 @@ ADD sources_ubuntu_12_04_sh.list /etc/apt/sources.list
 
 RUN cat /tmp/bashrc >> /root/.bashrc &&\
     rm -f /tmp/bashrc &&\
+    rm -f /etc/localtime &&\
+    ln -s /usr/share/zoneinfo/Asia/Shanghai /etc/localtime &&\
 
     # Install packages
     apt-get update && \
