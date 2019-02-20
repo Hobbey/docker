@@ -6,6 +6,7 @@ ADD localtime /etc/localtime
 ADD sources_ubuntu_18_04_sh.list /etc/apt/sources.list
 
 # Set Env
+ENV LANG C.UTF-8
 #ENV http_proxy proxy:port
 #ENV https_proxy proxy:port
 #ENV no_proxy localhost,10.0.0.0/8,192.168.0.0/16
