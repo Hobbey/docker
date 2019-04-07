@@ -1,5 +1,5 @@
 FROM ubuntu:18.04
-MAINTAINER Hobbey W "hobbey12@gmail.com"
+LABEL maintainer="hobbey12@gmail.com"
 
 # CST shanghai timezone
 COPY localtime_sh /etc/localtime_sh

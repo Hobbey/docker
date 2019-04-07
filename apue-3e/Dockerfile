@@ -1,8 +1,8 @@
 FROM ubuntu:12.04
-MAINTAINER Hobbey W "hobbey12@gmail.com"
+LABEL maintainer="hobbey12@gmail.com"
 
-ADD bashrc /tmp/
-ADD sources_ubuntu_12_04_sh.list /etc/apt/sources.list
+COPY bashrc /tmp/
+COPY sources_ubuntu_12_04_sh.list /etc/apt/sources.list
 
 # Set Env
 ENV LANG C.UTF-8
